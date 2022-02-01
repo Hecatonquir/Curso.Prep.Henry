@@ -1,0 +1,6 @@
+For es un grupo de palabras que nos sirve para repetir algún tipo de acción que queramos. 
+Mientras la condicion que nosotros impongamos se cumplan, se va a repetir la acción que nosotros le hayamos pedido.
+
+`&&`, `||`, `!`, son herramientas que nos ayudan a verificar más de una comparación al mismo tiempo,
+es decir. Si tengo 4 numeros, y los separo en 2 grupos y quiero comprar esos grupos a la vez, puedo usar
+el yy o el oo para ver por ejemplo si 1=2 y 3=4 o si alguno de los 2 son iguales.
