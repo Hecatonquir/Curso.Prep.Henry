@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "Buenas";
+const nuevaString = "11";
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 77;
@@ -16,8 +16,8 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 1;
-
+const nuevoModulo = 21 % 5 === 1
+;
 
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
@@ -202,6 +202,8 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   return "Hola " + nombre + "!"
+  // también podría poner: 
+  // return "Hola $"
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
