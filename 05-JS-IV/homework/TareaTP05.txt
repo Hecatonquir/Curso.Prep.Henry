@@ -1,0 +1,12 @@
+	* Objetos: Los objetos son similares a los arrays, solo que en vez de asociar un número
+        a cada espacio del contenedor, nosotros le asignamos un nombre a cada espacio. También
+        Pueden almacenar cualquier tipo de datos y hasta funciones. Por lo general los objetos
+        se usan para guardar mucha información sobre un único tema. Se escriben con {}.
+	* Propiedades: Son los nombres que le asignamos a los elementos que contiene un objeto.
+	* Métodos: se llama así a todas las funciones que estén dentro de un objeto.
+	* Bucle `for…in`: es un bucle que nos permite hacer un bucle dentro de un mismo objeto,
+    este va recorriendo todas las propiedades dentro de un objeto.
+	* Notación de puntos vs notación de corchetes: Las dos cumplen la misma función, solo que la
+    notación de punto es más rapida pero limitada, mientras que la notación con corchetes es más
+    larga de escribir e inconveniente, pero es más precisa por lo que permite realicar más
+    acciones que la notación en punto.

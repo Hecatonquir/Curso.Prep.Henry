@@ -1,0 +1,6 @@
+* Arrays: Son contenedores que pueden almacenar cualquier tipo de datos.
+    se crean como cualquier otro tipo de variable, solo que hay que encerrar las
+    variables entre corchetes y separadas por coma.
+    Los arrays pueden almacenar strings, numeros, booleanos, funciones e incluso otros arrays.
+    var array = [a, b, c, etc].
+    array[0] = Devuelve el elemento "a", etc
