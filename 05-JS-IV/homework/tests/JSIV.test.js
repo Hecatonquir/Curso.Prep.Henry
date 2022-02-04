@@ -43,7 +43,7 @@ describe('agregarPropiedad(object, property)', function() {
   });
 });
 
-xdescribe('invocarMetodo(object, method)', function() {
+describe('invocarMetodo(object, method)', function() {
   it('should invoke the method on the object', function() {
     const object = {
       x: 0,
@@ -56,7 +56,7 @@ xdescribe('invocarMetodo(object, method)', function() {
   });
 });
 
-xdescribe('multiplicarNumeroDesconocidoPorCinco(mysteryNumberObject)', function() {
+describe('multiplicarNumeroDesconocidoPorCinco(mysteryNumberObject)', function() {
   it('should return the mysteryNumber property multiplied by five', function() {
     const mysteryBox = {
       numeroMisterioso: 999,
@@ -67,7 +67,7 @@ xdescribe('multiplicarNumeroDesconocidoPorCinco(mysteryNumberObject)', function(
   });
 });
 
-xdescribe('eliminarPropiedad(object, property)', function() {
+describe('eliminarPropiedad(object, property)', function() {
   it('should delete the property from the object', function() {
     const updatedObject = {
       x: 1,
@@ -82,7 +82,7 @@ xdescribe('eliminarPropiedad(object, property)', function() {
   });
 });
 
-xdescribe('nuevoUsuario(nombre, email, password)', function() {
+describe('nuevoUsuario(nombre, email, password)', function() {
   it('should return a new user object with a nombre, email, and password property that match the arguments', function() {
     const user = {
       nombre: 'Jhon',
@@ -99,7 +99,7 @@ xdescribe('nuevoUsuario(nombre, email, password)', function() {
   });
 });
 
-xdescribe('tieneEmail(user)', function() {
+describe('tieneEmail(user)', function() {
   it('should return true if the user object has a value for its email property', function() {
     expect(tieneEmail({ usernombre: 'Samuel', email: 'samuel@email.com' })).toEqual(true);
     expect(tieneEmail({ usernombre: 'Jhon', email: null })).toEqual(false);
@@ -107,7 +107,7 @@ xdescribe('tieneEmail(user)', function() {
   });
 });
 
-xdescribe('tienePropiedad(object, property)', function() {
+describe('tienePropiedad(object, property)', function() {
   it('should return true if the object has the property that is passed in', function() {
     const obj = {
       x: true,
@@ -117,7 +117,7 @@ xdescribe('tienePropiedad(object, property)', function() {
   });
 });
 
-xdescribe('verificarPassword(user, password)', function() {
+describe('verificarPassword(user, password)', function() {
   it('should return true if passwords match', function() {
     const user = {
       password: 'Me encanta JS!',
@@ -134,7 +134,7 @@ xdescribe('verificarPassword(user, password)', function() {
   });
 });
 
-xdescribe('actualizarPassword(user, password)', function() {
+describe('actualizarPassword(user, password)', function() {
   it('should return the user object with the updated password', function() {
     const user = {
       password: 'Me encanta JS!',
@@ -144,7 +144,7 @@ xdescribe('actualizarPassword(user, password)', function() {
   });
 });
 
-xdescribe('agregarAmigo(user, newFriend)', function() {
+describe('agregarAmigo(user, newFriend)', function() {
   it('should add a new friend to the end of the amigos array property', function() {
     const user = {
       amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
@@ -154,7 +154,7 @@ xdescribe('agregarAmigo(user, newFriend)', function() {
   });
 });
 
-xdescribe('pasarUsuarioAPremium(users)', function() {
+describe('pasarUsuarioAPremium(users)', function() {
   it('should return the users array with each user\'s esPremium property set to true', function() {
     const users = [
       { esPremium: false },
@@ -174,7 +174,7 @@ xdescribe('pasarUsuarioAPremium(users)', function() {
   });
 });
 
-xdescribe('sumarLikesDeUsuario(user)', function() {
+describe('sumarLikesDeUsuario(user)', function() {
   it('should return the sum of likes for all user posts', function() {
     const user = {
       usernombre: 'Jhon Doe',
@@ -211,7 +211,7 @@ xdescribe('sumarLikesDeUsuario(user)', function() {
   });
 });
 
-xdescribe('agregarMetodoCalculoDescuento(storeItem)', function() {
+describe('agregarMetodoCalculoDescuento(storeItem)', function() {
   const storeItem = {
     precio: 80,
     porcentajeDeDescuento: 0.1,
