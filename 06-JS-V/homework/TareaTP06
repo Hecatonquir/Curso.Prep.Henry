@@ -1,0 +1,8 @@
+* `prototype`: es la base de un objeto, es decir, todos los objetos se construyen sobre esta
+    una base en particular que es a su vez otro objeto. Esto sirve para que en caso que busquemos una propiedad en nuestro objeto deseado y no lo encuentre, la consola va a buscar si existe esa propiedad en el objeto prototipo antes de tirar un error.
+    Se puede crear un prototipo para asignarle los mismos métodos a distintos objetos, para 
+    optimizar el código.
+*  `Constructors` (de Clases): Son funciones especiales que sirven para crear un molde 
+    con el que puedo crear varios objetos similares. Siempre se escriben con la primera
+    letra en Mayúsculas, usan this.nombrepropiedad = para crear una propiedad y no retornan
+    nada. 

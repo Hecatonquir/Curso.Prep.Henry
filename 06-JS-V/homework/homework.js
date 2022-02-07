@@ -3,25 +3,53 @@
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
   // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
-  // En el `contructor`, define el usuario, el nombre, el email y la contraseña
-  // El `contructor` debe tener un método llamado "saludar" en su `prototype` que devuelva una string 'Hola, mi nombre es {{nombre}}'
+  // En el `constructor`, define el usuario, el nombre, el email y la contraseña
+  // El `constructor` debe tener un método llamado "saludar" en su `prototype` que devuelva una string 'Hola, mi nombre es {{nombre}}'
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
-  // Tu código:
+  // Tu código:                                    OTRA FORMA CORRECTA (forma vieja):
+
+    class Usuario {                                
+     constructor (opciones){                       //function Usuario (opciones) {
+      this.usuario = opciones.usuario,             //this.usuario = opciones.usuario;
+      this.nombre = opciones.nombre,               //this.nombre = opciones.nombre;
+      this.email = opciones.email,                 //this.email = opciones.email;
+      this.password = opciones.password            //this.password = opciones.password;    
+      }                                            //}
+    saludar() {                                    //Usuario.prototype.saludar = function () {
+      return "Hola, mi nombre es " + this.nombre;  //return "Hola, mi nombre es " + this.nombre;}
+      }
+  }     
+  //var user = new Usuario();   //ESTO NO VA
+  return Usuario;  
 }
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
+ Constructor.prototype.saludar = function () {
+  return  "Hello World!";
+ }
 }
 
-function agregarStringInvertida() {
+function agregarStringInvertida() { 
   // Agrega un método al prototype de String que devuelva la misma cadena de caracteres, pero invertida.
   // El método debe llamarse "reverse"
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
+
+  String.prototype.reverse = function (){
+    var string = this;
+    var long = string.length;
+    var invertido = [];
+    for (i=0; i<long; i++){      
+      invertido[i] = string[long-1-i];
+    }   
+    return invertido.join(""); 
+  }
+  
 }
 
 // ---------------------------------------------------------------------------//
@@ -35,10 +63,13 @@ function agregarStringInvertida() {
     //   Domicilio: 'Saavedra 123'
     //  }
 
-  class Persona {
-    constructor(/*Escribir los argumentos que recibe el constructor*/) {
+  class Persona {/*Escribir ABAJO los argumentos que recibe el constructor*/
+    constructor(nombre, apellido, edad, dir) {
       // Crea el constructor:
-
+      this.Nombre = nombre,
+      this.Apellido = apellido,
+      this.Edad = edad,
+      this.Domicilio = dir
     }
 }
 
@@ -46,13 +77,17 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
+  var nuevapersona = new Persona(nombre, apellido, edad, dir);
+  return nuevapersona;
 }
   
 function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
+  Persona.prototype.datos = function (){
+    return this.Nombre + ", " + this.Edad + " años";
+  }
 }
-  
 
 // No modificar nada debajo de esta línea
 // --------------------------------

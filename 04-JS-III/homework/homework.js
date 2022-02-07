@@ -69,6 +69,8 @@ function dePalabrasAFrase(palabras) {
     frase = frase  + " " + palabras[i];
   }
   return frase;
+  // O SIMPLEMENTE PONER:
+  // return palabras.join(" ");
 }
 
 
@@ -86,7 +88,7 @@ function arrayContiene(array, elemento) {
       return true;
     }
     else{
-      return false;
+      return false; 
     }
   }
 }
@@ -298,28 +300,27 @@ function breakStatement(numero) {
   return aumentado;
 }
 
-
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array.    
   //Devolver el array
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
-  // Tu código:
-  var aumentado = [numero+2]
-  for (i=1; i<10; i++){
-    if (i==5){
-      aumentado[i] = aumentado[i-1];
-      continue;
-    }
-    else{
-      aumentado[i] = aumentado[i-1] + 2;
-    }    
+  // Tu código:                                   // OTRO CODIGO MEJOR ESCRITO. YO LO HICE MAL
+  var aumentado = [numero+2]                      // var array =[];
+  for (i=1; i<10; i++){                           // var suma = numero;
+    if (i==5){                                    // for (i=0; i<10; i++)  {
+      aumentado[i] = aumentado[i-1];              //  if (i==5){
+      continue;                                   //    continue;  
+    }                                             //  } else {
+    else{                                         //      suma = suma + 2;
+      aumentado[i] = aumentado[i-1] + 2;          //      array.push(suma);
+    }                                             //    } return array;
   }
   aumentado.splice(5,1);
   return aumentado
 }
-
+{console.log(continueStatement(50))};
 
 // No modificar nada debajo de esta línea
 // --------------------------------

@@ -1,0 +1,3 @@
+* `Funciones` Callback: Son funciones que se ingresan como parámetros de otras funciones.
+    Esto sigbufica que yo primero creo una función, y luego creo otra que use los resultados
+    de la primera.
