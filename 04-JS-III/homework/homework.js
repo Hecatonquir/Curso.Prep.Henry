@@ -6,7 +6,7 @@ function devolverPrimerElemento(array) {
   primerelemento = array[0];
   return primerelemento;
 }
-
+console.log(devolverPrimerElemento(["cufa",2,3,4,5]))
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array

@@ -6,8 +6,17 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
+  /*String.prototype.capitalize = function () {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+  }
+  const Mayusculado = nombre.map(function (elemento, indice){
+    return elemento.capitalize()
+  })
+  return Mayusculado;*/ // ESTO NO VA PORQUE "nombre" NO ES UN ARRAY, ES UN STRIG, ENTONCES nombre.map NO SIRVE
+
   return nombre.charAt(0).toUpperCase() + nombre.slice(1);
 }
+
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
@@ -64,11 +73,10 @@ function filter(array) {
     if (elemento[0] === "a"){
       filtrado.push(elemento);
     }
-  })
+  })  
   return (filtrado);*/
   return array.filter(palabras => palabras[0] === "a")
 }
-console.log(filter(["arbol", "pelota", "atardecer", "coche", "auto", "moto"]))
 
 // No modificar nada debajo de esta línea
 // --------------------------------

@@ -38,7 +38,7 @@ function invocarMetodo(objeto, metodo) {
   objeto[metodo]();
   // TODAS ESAS FORMAS SIRVEN. objeto["metodo"]() === objeto.metodo() DISTINTO DE objeto[metodo](), ya que esta última hace
   //referencia a una variable, mientras que las otras dos buscan una propiedad.
-}
+} 
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
@@ -96,7 +96,7 @@ function tienePropiedad(objeto, propiedad) {
       return false;
     }
   }
-
+      // OTRA FORMA ERA PONER: retunr objeto.hasOwnProperty(propiedad);
 }
 
 function verificarPassword(usuario, password) {
