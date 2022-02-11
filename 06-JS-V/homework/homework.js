@@ -41,8 +41,8 @@ function agregarStringInvertida() {
   // Pista: Necesitarás usar "this" dentro de "reverse"
 
   String.prototype.reverse = function (){
-    var string = this;
-    var long = string.length;
+    var string = this;  // este paso está de más
+    var long = string.length; 
     var invertido = [];
     for (i=0; i<long; i++){      
       invertido[i] = string[long-1-i];
@@ -63,14 +63,22 @@ function agregarStringInvertida() {
     //   Domicilio: 'Saavedra 123'
     //  }
 
-  class Persona {/*Escribir ABAJO los argumentos que recibe el constructor*/
+  class Persona                                 { // Escribir ABAJO los argumentos que recibe el constructor
     constructor(nombre, apellido, edad, dir) {
       // Crea el constructor:
       this.Nombre = nombre,
       this.Apellido = apellido,
       this.Edad = edad,
-      this.Domicilio = dir
-    }
+      this.Domicilio = dir,
+      this.detalle = function (){
+        return {
+          Nombre: this.Nombre = nombre,
+          Apellido: this.Apellido,
+          Edad: this.Edad = edad,
+          Domicilio: this.Domicilio = dir
+        }
+      } 
+    }    
 }
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
