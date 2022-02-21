@@ -1,16 +1,17 @@
 h1 {
 	/*Asi es como llamo a las ETIQUETAS*/
-	color: rgb(33, 101, 146);
+	color: rgb(60, 66, 71);
 }
 img {
 	height: 400px;
-	width: 400px;
+	width: 500px;
 }
 #thirdDiv {
 	/*Asi es como llamo a los ID*/
 	height: 810px;
-	width: 500px;
-	background-color: chocolate;
+	max-width: 600px;
+	background-color: rgb(91, 110, 126);
+	margin: 0 auto;
 }
 #spanId {
 	font-size: 18px;
@@ -18,6 +19,22 @@ img {
 }
 .divClass {
 	/*Asi es como llamo a las CLASES*/
+	max-width: 600px;
 	padding: 50px;
-	border: 5px solid gold;
+	border: 5px solid rgb(91, 110, 126);
+	text-align: center;
+	margin: 0 auto;
+}
+body {
+	background-image: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg");
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+.TextoFijo {
+	position: fixed;
+	bottom: 0;
+	margin: 30px; /*Esto me lo hace subir de abajo hacia arriba*/
+	width: 50%;
+	background-color: rgb(253, 0, 84);
+	text-align: center;
 }
