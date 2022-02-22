@@ -49,28 +49,23 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 7. */
 /* Acá va tu código */
 #ejercicioSiete {
-	display: inline-flexbox;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 #elementoUno {
-	position: absolute;
-	top: 0;
-	left: 0;
-	justify-content: center;
-	align-self: stretch;
-	flex-direction: row-reverse;
+	background-color: red;
+	align-self: start;
 }
 #elementoDos {
-	position: absolute;
-	top: 0;
-	right: 0;
+	background-color: yellow;
+	align-self: center;
 }
 #elementoTres {
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	background-color: blue;
+	color: white;
 }
 #elementoCuatro {
-	position: absolute;
-	bottom: 0;
-	right: 0;
+	background-color: violet;
+	align-self: flex-end;
 }
